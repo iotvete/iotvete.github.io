@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Телеграм otvete ege100">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159064767-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-159064767-1');
+    </script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css">
+
+    <title>ege100 Телеграм</title>
+
+    <style>
+        #description > p {
+            font-size: 3pt;
+            color: #FFFFFE;
+            text-align: center;
+            word-spacing: 8px;
+        }
+    </style>
+</head>
+<body>
+<main role="main">
+
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">ege100</h1>
+            <p class="lead text-muted">📌 Проект, созданный при поддержке крупнейших TG каналов и VK сообществ
+                с ответами <i class="fab fa-vk"></i>.</p>
+            <p>
+                <a href="tg://resolve?domain=otvete"
+                   class="btn btn-primary my-2">
+                    <i class="fab fa-telegram-plane"></i> Открыть в Telegram
+                </a>
+                <a href="#how-to" class="btn btn-secondary my-2">Как зайти?</a>
+            </p>
+        </div>
+    </section>
+    <section id="description">
+        <p>
+            Телеграм Ответы otvete ege100
+        </p>
+    </section>
+    <section class="container" id="readme">
+        <h3>Инструкция</h3>
+        <div class="list-group">
+            <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">1. Установка Телеграм</h5>
+                </div>
+                <p class="mb-1">
+                    Если приложение
+                    <span class="badge badge-secondary"><i class="fab fa-telegram-plane"></i> Telegram</span>
+                    еще не установлено, нужно скачать по одной из кнопок:
+                </p>
+                <div class="mx-auto text-center mb-1">
+                    <div class="btn-group" role="group" aria-label="Installation links">
+                        <button onclick="openAndroid();" type="button" class="btn btn-success">
+                            <i class="fab fa-android"></i> Android
+                        </button>
+                        <button onclick="openApple();" type="button" class="btn btn-light">
+                            <i class="fab fa-apple"></i> Apple
+                        </button>
+                        <button onclick="openDesktop();" type="button" class="btn btn-info">
+                            <i class="fas fa-desktop"></i> <i class="fab fa-windows"></i> Компьютер
+                        </button>
+                    </div>
+                </div>
+                <small class="text-muted">
+                    Если что-то не получается, поищи приложение Telegram в магазине приложений
+                </small>
+            </div>
+            <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">2. Переход в Телеграм</h5>
+                </div>
+                <p class="mb-1">Чтобы попасть в канал, переходи по ссылке, все просто:</p>
+                <div class="mx-auto text-center mb-1">
+                    <a href="tg://resolve?domain=otvete"
+                       class="btn btn-primary my-2">
+                        <i class="fab fa-telegram-plane"></i> Открыть в Telegram
+                    </a>
+                </div>
+            </div>
+            <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">3. Нажми кнопку "Подписаться"</h5>
+                </div>
+                <p class="mb-1">Не потеряйте канал в самый неподходящий момент. Больше друзей - больше ответов.</p>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="sys.js"></script>
+<script>
+    window.protocolCheck("tg://resolve?domain=otvete",
+        function () {
+            window.location.href = "#readme"
+        });
+
+    function openAndroid() {
+        window.open('https://play.google.com/store/apps/details?id=org.telegram.messenger&hl=ru&gl=RU', '_blank');
+    }
+
+    function openApple() {
+        window.open('https://apps.apple.com/ru/app/telegram/id686449807', '_blank');
+    }
+
+    function openDesktop() {
+        window.open('https://desktop.telegram.org/', '_blank');
+    }
+</script>
+</body>
+</html>
